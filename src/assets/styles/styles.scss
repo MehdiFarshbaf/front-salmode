@@ -4,6 +4,49 @@
   box-sizing: border-box;
 }
 
-.red {
-  color: red;
+.inside {
+  width: 83.34%;
+  max-width: 1200px;
+}
+.btn{
+  padding: 10px 22.5px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+  color: var(--black);
+  border-radius: 8px;
+  background: var(--salmode, linear-gradient(223deg, #BD992F -31.99%, #FACE4B 154.59%));
+  transition: all 0.3s;
+}
+.btn:hover{
+  box-shadow: 0 0 26px 0 rgba(119, 119, 119, 0.16);
+}
+a{
+  text-decoration: none;
+}
+/* Chrome, Safari, Edge, Opera */
+//input::-webkit-outer-spin-button,
+//input::-webkit-inner-spin-button {
+//  -webkit-appearance: none;
+//  margin: 0;
+//}
+
+/* Firefox */
+//input[type=number] {
+//  -moz-appearance: textfield;
+//}
+
+@media screen and (max-width: 768px) {
+  .inside {
+    width: 100% !important;
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .inside {
+    width: 100% !important;
+    padding: 0 8px;
+  }
 }

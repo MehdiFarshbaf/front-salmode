@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  display: flex;
+  width: 36px;
+  height: 36px;
+  padding: 3px 4.751px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.badge {
+  border-radius: 50%;
+  background: var(--salmode);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--white);
+  }
+}

@@ -1,0 +1,141 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F5F5F5;
+  padding: 16px 0 21px 0;
+  position: relative;
+}
+
+.topHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 28px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 36px;
+}
+
+.input {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  background: var(--white);
+  //width: 696px;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  padding-right: 16px;
+
+  input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    text-align: right;
+    outline: none;
+    border: none;
+  }
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.link {
+  margin-left: 44px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: right;
+  color: var(--black);
+  transition: all 0.3s;
+}
+
+.link:hover {
+  color: var(--purple);
+}
+
+.link.activeLink {
+  color: var(--purple);
+
+}
+
+.link:first-child {
+  margin-left: 0;
+}
+
+.link:last-child {
+  margin-right: 20px;
+}
+
+.category {
+  //position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  border-left: 1px solid var(--black);
+  margin-left: 20px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
+  }
+
+  svg {
+    path {
+      fill: var(--black);
+    }
+  }
+}
+
+.category:hover {
+  p {
+    color: var(--purple);
+  }
+;
+
+  svg {
+    path {
+      fill: var(--purple);
+    }
+  }
+}
+
+.mobileHeader {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .topHeader, .navbar {
+    display: none;
+  }
+  .header {
+    padding: 8px 0 8px 0;
+  }
+}
