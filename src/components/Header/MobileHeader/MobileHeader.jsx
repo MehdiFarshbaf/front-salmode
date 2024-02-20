@@ -17,9 +17,10 @@ const MobileHeader = () => {
             <Link to='/'><img src={require('./../../../assets/images/logo.png')} alt=""/></Link>
             <img onClick={() => setShowMenu(!showMenu)} src={hamburgerIcon} alt=""/>
             <nav ref={ref} className={showMenu ? `${styles.menu} ${styles.activeMobile}` : styles.menu}>
-                <Link onClick={()=>setShowMenu(false)} to="/" className={styles.menuItem}><p>دسته بندی</p></Link>
-                {navList.reverse().map(menu => (
-                    <Link onClick={()=>setShowMenu(false)} to={menu.path} className={styles.menuItem}><p>{menu.label}</p></Link>
+                <Link onClick={() => setShowMenu(false)} to="/" className={styles.menuItem}><p>دسته بندی</p></Link>
+                {navList.reverse().map((menu, index) => (
+                    <Link key={index} onClick={() => setShowMenu(false)} to={menu.path} className={styles.menuItem}>
+                        <p>{menu.label}</p></Link>
                 ))}
             </nav>
         </div>

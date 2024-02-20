@@ -8,7 +8,8 @@
   width: 83.34%;
   max-width: 1200px;
 }
-.btn{
+
+.btn {
   padding: 10px 22.5px;
   font-size: 16px;
   font-style: normal;
@@ -19,23 +20,68 @@
   background: var(--salmode, linear-gradient(223deg, #BD992F -31.99%, #FACE4B 154.59%));
   transition: all 0.3s;
 }
-.btn:hover{
+
+.btn:hover {
   box-shadow: 0 0 26px 0 rgba(119, 119, 119, 0.16);
 }
-a{
+
+a {
   text-decoration: none;
 }
+
+.formInput {
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  border-radius: 4px;
+  border: 0.4px solid #727272;
+  background: var(--white);
+  outline: none;
+  padding: 8px 16px;
+  margin-bottom: 24px;
+}
+
+.formButton {
+  cursor: pointer;
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+  background: var(--salmode, linear-gradient(223deg, #BD992F -31.99%, #FACE4B 154.59%));
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  color: var(--black);
+  border: none;
+  transition: all 0.3s;
+}
+
+.formButton:hover {
+  box-shadow: 0 0 26px 0 rgba(119, 119, 119, 0.16);
+}
+
 /* Chrome, Safari, Edge, Opera */
-//input::-webkit-outer-spin-button,
-//input::-webkit-inner-spin-button {
-//  -webkit-appearance: none;
-//  margin: 0;
-//}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 /* Firefox */
-//input[type=number] {
-//  -moz-appearance: textfield;
-//}
+input[type=number] {
+  text-align: left ;
+  -moz-appearance: textfield;
+}
+
+input[type = tel] {
+  text-align: left !important;
+}
+
+//input is not empty
+input:placeholder-shown {
+  text-align: right !important;
+}
 
 @media screen and (max-width: 768px) {
   .inside {
