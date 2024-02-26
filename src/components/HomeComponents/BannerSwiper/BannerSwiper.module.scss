@@ -1,0 +1,17 @@
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0;
+}
+.imageBanner{
+  object-fit: cover;
+  width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .container{
+    padding: 20px 0;
+  }
+
+}

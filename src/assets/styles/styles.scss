@@ -70,7 +70,7 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type=number] {
-  text-align: left ;
+  text-align: left;
   -moz-appearance: textfield;
 }
 
@@ -81,6 +81,25 @@ input[type = tel] {
 //input is not empty
 input:placeholder-shown {
   text-align: right !important;
+}
+
+.swiper-custom-bullet {
+  height: 2px;
+  width: 2px;
+  background-color: white;
+}
+
+.swiper-custom-bullet.swiper-custom-bullet-active {
+  height: 2px;
+  width: 2px;
+  background-color: orange;
+}
+
+.d-flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
