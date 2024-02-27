@@ -1,13 +1,13 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination, Navigation,} from 'swiper/modules';
 import {useState} from "react";
+import SwiperController from "../../SwiperController/SwiperController";
 
 //images
 import bannerImage from './banner.png'
 
 //styles
 import styles from './BannerSwiper.module.scss'
-import SwiperController from "../../SwiperController/SwiperController";
 
 
 const BannerSwiper = () => {
