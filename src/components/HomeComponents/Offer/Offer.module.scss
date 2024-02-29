@@ -6,39 +6,3 @@
   padding: 20px 0;
   background: var(--gray);
 }
-
-.offer {
-  position: relative;
-}
-
-.title {
- float: right;
-  width: 254px;
-  height: 58px;
-  background: var(--purple);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 45px 0 0 45px;
-  margin-bottom: 44px;
-
-  p {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    color: var(--white);
-  }
-}
-
-@media screen and (max-width: 756px) {
-
-  .title {
-    height: 35px;
-    width: 180px;
-
-    p {
-      font-size: 14px;
-    }
-  }
-}

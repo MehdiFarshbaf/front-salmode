@@ -2,6 +2,7 @@ import BannerSwiper from "../../components/HomeComponents/BannerSwiper/BannerSwi
 import CategoryHome from "../../components/HomeComponents/CategoryHome/CategoryHome";
 import WinterSale from "../../components/HomeComponents/WinterSale/WinterSale";
 import Offer from "../../components/HomeComponents/Offer/Offer";
+import BestSelling from "../../components/HomeComponents/BestSelling/BestSelling";
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <CategoryHome/>
             <WinterSale/>
             <Offer/>
+            <BestSelling/>
         </>
 
     )

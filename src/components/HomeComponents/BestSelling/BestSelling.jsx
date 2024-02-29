@@ -2,23 +2,23 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination, Navigation, Autoplay,} from 'swiper/modules';
 
 // styles
-import styles from './Offer.module.scss'
+import styles from './../Offer/Offer.module.scss'
+import ProductCard from "../../ProductCard/ProductCard";
 import SwiperController from "../../SwiperController/SwiperController";
 import {useState} from "react";
 import {productList} from "../../../helpers/data";
-import ProductCard from "../../ProductCard/ProductCard";
 
-const Offer = () => {
+const BestSelling = () => {
 
     // variables
     const [swiper, setSwiper] = useState(null);
-    const products = productList.filter(p => p.discount)
+
     return (
         <section className='relative'>
-            <div className='titleHomePage'><p>تخفیفات سال مد</p></div>
+            <div className="titleHomePage"><p>پر فروش ترین ها</p></div>
             <div className={styles.container}>
                 <div className="inside">
-                    <div className="w-100">
+                    <div className='w-100'>
                         <Swiper
                             spaceBetween={24}
                             // slidesPerView={4}
@@ -61,16 +61,16 @@ const Offer = () => {
                                 setSwiper(swiper);
                             }}
                         >
-                            {products.map(product => (
+                            {productList.map(product => (
                                 <SwiperSlide key={product.id}><ProductCard product={product}/></SwiperSlide>
                             ))}
                         </Swiper>
                         <SwiperController swiper={swiper}/>
+
                     </div>
                 </div>
-
             </div>
         </section>
     )
 }
-export default Offer
+export default BestSelling
