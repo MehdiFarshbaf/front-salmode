@@ -143,5 +143,16 @@
     display: block;
     width: 100%;
   }
+  .footer {
+    margin-top: 12px;
+  }
+  .column {
+    width: 100%;
+    align-items: center;
+
+    p {
+      text-align: center !important;
+    }
+  }
 }
 

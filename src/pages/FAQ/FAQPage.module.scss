@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 8px;
+  }
+}
