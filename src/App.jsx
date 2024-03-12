@@ -6,19 +6,24 @@ import FAQPage from "./pages/FAQ/FAQPage";
 import Login from "./pages/Login/Login";
 import Shop from "./pages/Shop/Shop";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import Rules from "./pages/Rules/Rules";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 const App = () => {
     return (
-        <MainLayout>
-            <Routes>
-                <Route path='/' element={<Home/>}/>
-                <Route path='/faq' element={<FAQPage/>}/>
-                <Route path='/about-us' element={<AboutUs/>}/>
-                <Route path='/shop' element={<Shop/>}/>
-                <Route path='/contact-us' element={<ContactUs/>}/>
-                <Route path='/login' element={<Login/>}/>
-            </Routes>
-        </MainLayout>
+        <ScrollToTop>
+            <MainLayout>
+                <Routes>
+                    <Route path='/' element={<Home/>}/>
+                    <Route path='/faq' element={<FAQPage/>}/>
+                    <Route path='/about-us' element={<AboutUs/>}/>
+                    <Route path='/shop' element={<Shop/>}/>
+                    <Route path='/contact-us' element={<ContactUs/>}/>
+                    <Route path='/login' element={<Login/>}/>
+                    <Route path='/rule' element={<Rules/>}/>
+                </Routes>
+            </MainLayout>
+        </ScrollToTop>
     )
 }
 export default App

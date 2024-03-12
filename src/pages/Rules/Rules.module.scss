@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  padding: 24px;
+  background: #F5F5F5;
+  border-radius: 8px;
+  margin-bottom: 24px;
+
+  p {
+    direction: rtl;
+    font-style: normal;
+    line-height: normal;
+    text-align: justify;
+  }
+}
+
+.title {
+  margin-bottom: 28px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--purple);
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black);
+}
