@@ -5,7 +5,8 @@ export const navList = [
     {id: 0, label: 'درباره ما', path: 'about-us'},
     {id: 1, label: 'تماس با ما', path: '/contact-us'},
     {id: 2, label: 'فروشگاه', path: '/shop'},
-    {id: 3, label: 'خانه', path: '/'}
+    {id: 3, label: 'خانه', path: '/'},
+    {id: 4, label: 'سوالات متداول', path: '/faq'}
 ]
 export const categoryList = [
     {id: 0, image: imgCategory, title: 'مانتو', subCategory: ['کاپشن', 'پالتو', 'بارانی', 'کت']},

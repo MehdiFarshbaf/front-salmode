@@ -1,0 +1,83 @@
+.application {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin-top: 40px;
+}
+
+.mobileImage {
+  object-fit: cover;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--purple);
+  direction: rtl;
+  margin-top: 80px;
+  margin-bottom: 64px;
+
+  span {
+    color: var(--black);
+  }
+}
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  img {
+    width: 178px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imageContainer {
+    display: none;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 576px){
+  .buttonsContainer{
+    width: 90%;
+    img{
+      width: 90%;
+      height: 60px;
+    }
+  }
+  .title{
+    margin-top: 5px;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+}

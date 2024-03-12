@@ -3,6 +3,7 @@ import CategoryHome from "../../components/HomeComponents/CategoryHome/CategoryH
 import WinterSale from "../../components/HomeComponents/WinterSale/WinterSale";
 import Offer from "../../components/HomeComponents/Offer/Offer";
 import BestSelling from "../../components/HomeComponents/BestSelling/BestSelling";
+import Application from "../../components/HomeComponents/Application/Application";
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <WinterSale/>
             <Offer/>
             <BestSelling/>
+            <Application/>
         </>
 
     )

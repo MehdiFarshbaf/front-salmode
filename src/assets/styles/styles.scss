@@ -17,7 +17,7 @@
   position: relative;
 }
 
-.titleHomePage {
+.titleHomePage, .title {
   float: right;
   width: 254px;
   margin-top: 40px;
@@ -130,13 +130,20 @@ input:placeholder-shown {
   justify-content: center;
   align-items: center;
 }
+.d-flex-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 768px) {
   .inside {
     width: 100% !important;
     padding: 0 16px;
   }
-  .titleHomePage {
+  .titleHomePage, .title {
     height: 35px;
     width: 180px;
 
@@ -145,8 +152,6 @@ input:placeholder-shown {
     }
   }
 }
-
-
 
 
 @media screen and (max-width: 576px) {

@@ -1,6 +1,10 @@
+import PageLayout from "../../layouts/PageLayout/PageLayout";
+
 const FAQPage = () => {
     return (
-        <p>faq page</p>
+        <PageLayout title="سوالات متداول">
+            <p>fasjdflkasd</p>
+        </PageLayout>
     )
 }
 export default FAQPage
