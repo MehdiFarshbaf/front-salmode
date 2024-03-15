@@ -64,3 +64,16 @@
 .rotate_arrow {
   -webkit-transform: rotate(-180deg);
 }
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 8px;
+  }
+  .question {
+    align-items: center;
+
+    p {
+      font-size: 14px !important;
+    }
+  }
+}
