@@ -35,7 +35,7 @@ export const categoryList = [
     {id: 5, image: Shawl2, title: 'شال و روسری', subCategory: ['شال گردن', 'شلوارک', 'شلوار', 'هودی', 'شومیز']},
     {id: 6, image: socks, title: 'جوراب', subCategory: []},
     {id: 7, image: pants, title: 'شلوار', subCategory: []},
-    {id: 7, image: belt, title: 'کمربند', subCategory: []},
+    {id: 8, image: belt, title: 'کمربند', subCategory: []},
 ]
 
 export const productList = [
