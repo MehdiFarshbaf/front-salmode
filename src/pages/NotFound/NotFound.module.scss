@@ -1,0 +1,26 @@
+.notFound {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    margin: 30px 0;
+  }
+
+  .description {
+    direction: rtl;
+    text-align: center;
+    color: var(--purple);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 28px;
+  }
+
+  a {
+    margin-bottom: 100px;
+  }
+}

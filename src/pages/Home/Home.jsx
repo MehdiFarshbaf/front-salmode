@@ -5,7 +5,12 @@ import Offer from "../../components/HomeComponents/Offer/Offer";
 import BestSelling from "../../components/HomeComponents/BestSelling/BestSelling";
 import Application from "../../components/HomeComponents/Application/Application";
 
+import {changePageTitle} from "../../helpers/functions";
+
 const Home = () => {
+
+    changePageTitle("صفحه اصلی")
+
     return (
         <>
             <BannerSwiper/>

@@ -3,8 +3,10 @@ import PageLayout from "../../layouts/PageLayout/PageLayout";
 
 //styles
 import styles from './Rules.module.scss'
+import {changePageTitle} from "../../helpers/functions";
 
 const Rules = () => {
+    changePageTitle("قوانین و مقررات")
     return (
         <PageLayout title="قوانین و مقرارت">
             <div className={styles.container}>
