@@ -3,6 +3,10 @@ import CategoryCard from "../CategoryCard/CategoryCard";
 import {categoryList} from "../../../helpers/data";
 
 const CategoryHome = () => {
+
+    const list = categoryList
+    list.length = 8
+
     return (
         <section className={styles.container}>
             <div className={styles.title}><p>دسته بندی سال مد</p></div>

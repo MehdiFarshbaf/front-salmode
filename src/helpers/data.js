@@ -1,6 +1,16 @@
 import imgCategory from './../assets/images/category.png'
 import imgProduct from './../assets/images/product.png'
 
+//category images
+import socks from './../assets/images/category/socks.png'
+import bag from './../assets/images/category/bag.png'
+import Shawl from './../assets/images/category/Shawl.png'
+import Shawl2 from './../assets/images/category/Shawl2.png'
+import manto from './../assets/images/category/manto.png'
+import dress from './../assets/images/category/dress.png'
+import pants from './../assets/images/category/pants.png'
+import belt from './../assets/images/category/belt.png'
+
 // icons
 import facebookIcon from './../assets/images/icons/facebook.svg'
 import twitterIcon from './../assets/images/icons/twitter.svg'
@@ -17,12 +27,15 @@ export const navList = [
     {id: 4, label: 'سوالات متداول', path: '/faq'}
 ]
 export const categoryList = [
-    {id: 0, image: imgCategory, title: 'مانتو', subCategory: ['کاپشن', 'پالتو', 'بارانی', 'کت']},
+    {id: 0, image: manto, title: 'مانتو', subCategory: ['کاپشن', 'پالتو', 'بارانی', 'کت']},
     {id: 1, image: imgCategory, title: 'کفش', subCategory: ['تخت', 'صندل', 'نیم بوت', 'کتونی']},
-    {id: 2, image: imgCategory, title: 'کیف', subCategory: ['دستی', 'کوله', 'دوشی']},
-    {id: 3, image: imgCategory, title: 'شال و کلاه', subCategory: ['شال گردن', 'شلوارک', 'شلوار', 'هودی', 'شومیز']},
-    {id: 4, image: imgCategory, title: 'لباس', subCategory: ['شال گردن', 'شلوارک', 'شلوار', 'هودی', 'شومیز']},
-    {id: 5, image: imgCategory, title: 'شال و روسری', subCategory: ['شال گردن', 'شلوارک', 'شلوار', 'هودی', 'شومیز']},
+    {id: 2, image: bag, title: 'کیف', subCategory: ['دستی', 'کوله', 'دوشی']},
+    {id: 3, image: Shawl, title: 'شال و کلاه', subCategory: ['شال گردن', 'شلوارک', 'شلوار', 'هودی', 'شومیز']},
+    {id: 4, image: dress, title: 'لباس', subCategory: ['شال گردن', 'شلوارک', 'شلوار', 'هودی', 'شومیز']},
+    {id: 5, image: Shawl2, title: 'شال و روسری', subCategory: ['شال گردن', 'شلوارک', 'شلوار', 'هودی', 'شومیز']},
+    {id: 6, image: socks, title: 'جوراب', subCategory: []},
+    {id: 7, image: pants, title: 'شلوار', subCategory: []},
+    {id: 7, image: belt, title: 'کمربند', subCategory: []},
 ]
 
 export const productList = [
