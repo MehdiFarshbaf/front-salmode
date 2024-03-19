@@ -1,0 +1,44 @@
+.body {
+  padding: 0 !important;
+}
+
+.box {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 10px 16px;
+  background: var(--gray);
+  border-radius: 8px;
+}
+
+.container {
+  padding: 12px;
+}
+
+.rootRadio {
+  width: 100%;
+  direction: rtl;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.labelRadio {
+  margin-right: 8px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.switchLabel {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-right: 12px;
+  color: var(--black);
+}
+
+.switchRoot {
+  width: 100%;
+  direction: rtl;
+}

@@ -11,12 +11,16 @@ import {Checkbox, Switch, Tabs, RangeSlider} from '@mantine/core';
 //icons
 import sortIcon from './../../assets/images/icons/sort.svg'
 import filterIcon from './../../assets/images/icons/filter.svg'
+import SortModal from "../../modals/SortModal/SortModal";
+import FilterModal from "../../modals/FilterModal/FilterModal";
 
 const Products = () => {
 
     // variables
     const {id} = useParams()
     const [category, setCategory] = useState()
+    const [showFilter, setShowFilter] = useState(false)
+    const [showSort, setShowSort] = useState(false)
 
     //functions
     const findCategory = async () => {
@@ -30,6 +34,10 @@ const Products = () => {
 
     return (
         <PageLayout title={category?.title}>
+            {/*modals*/}
+            <SortModal showModal={showSort} setShowModal={setShowSort}/>
+            <FilterModal showModal={showFilter} setShowModal={setShowFilter}/>
+
             <div className={styles.container}>
                 <section>
                     <div className={styles.selectSection}>
@@ -49,13 +57,13 @@ const Products = () => {
                                 </Tabs.List>
                             </Tabs>
                         </div>
-                        <button><p>مرتب سازی</p><img src={sortIcon} alt=""/></button>
-                        <button><p>فیلتر</p><img src={filterIcon} alt=""/></button>
+                        <button onClick={() => setShowSort(true)}><p>مرتب سازی</p><img src={sortIcon} alt=""/></button>
+                        <button onClick={() => setShowFilter(true)}><p>فیلتر</p><img src={filterIcon} alt=""/></button>
                     </div>
                     {/*show products*/}
                     <div className={styles.containerProducts}>
                         {productList.map(product => (
-                            <ProductCard product={product} type="product" />
+                            <ProductCard product={product} type="product"/>
                         ))}
                     </div>
                 </section>
@@ -66,14 +74,14 @@ const Products = () => {
                             root: 'rootCheckbox',
                             label: "labelCheckbox"
                         }} labelPosition="right" label="کوچیک"/>
-                            <Checkbox color="var(--purple)" classNames={{
-                                root: 'rootCheckbox',
-                                label: "labelCheckbox"
-                            }} labelPosition="right" label="بزرگ"/>
-                            <Checkbox color="var(--purple)" classNames={{
-                                root: 'rootCheckbox',
-                                label: "labelCheckbox"
-                            }} labelPosition="right" label="متوسط"/>
+                        <Checkbox color="var(--purple)" classNames={{
+                            root: 'rootCheckbox',
+                            label: "labelCheckbox"
+                        }} labelPosition="right" label="بزرگ"/>
+                        <Checkbox color="var(--purple)" classNames={{
+                            root: 'rootCheckbox',
+                            label: "labelCheckbox"
+                        }} labelPosition="right" label="متوسط"/>
                     </div>
                     <div className={styles.filterBox}>
                         <p className={styles.filterTitle}>نوع</p>
@@ -131,6 +139,6 @@ const Products = () => {
                 </section>
             </div>
         </PageLayout>
-)
+    )
 }
 export default Products
