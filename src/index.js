@@ -4,19 +4,20 @@ import App from './App';
 import {BrowserRouter} from "react-router-dom";
 import {MantineProvider} from "@mantine/core";
 import {ToastContainer} from "react-toastify";
-
 // styles
 import './assets/styles/styles.scss'
 import './assets/styles/font.scss'
 import './assets/styles/colors.scss'
+import './assets/styles/mantile.scss'
 import 'swiper/css';
+import '@mantine/core/styles.css';
 
 const root = createRoot(document.getElementById('root'));
 root.render(
     <MantineProvider>
         <BrowserRouter>
             <App/>
-            <ToastContainer rtl={true} position='top-right' />
+            <ToastContainer rtl={true} position='top-right'/>
         </BrowserRouter>
     </MantineProvider>
 );

@@ -1,0 +1,19 @@
+.rootCheckbox {
+  width: 100%;
+  direction: rtl;
+  margin-bottom: 12px;
+}
+
+.labelCheckbox {
+  direction: rtl;
+  text-align: right;
+  margin-right: 9px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.rootCheckbox:last-child {
+  margin-bottom: 0;
+}

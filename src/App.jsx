@@ -9,6 +9,7 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import Rules from "./pages/Rules/Rules";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import NotFound from "./pages/NotFound/NotFound";
+import Products from "./pages/Products/Products";
 
 const App = () => {
     return (
@@ -22,7 +23,9 @@ const App = () => {
                     <Route path='/contact-us' element={<ContactUs/>}/>
                     <Route path='/login' element={<Login/>}/>
                     <Route path='/rule' element={<Rules/>}/>
+                    <Route path='/products/:id' element={<Products/>}/>
                     <Route path='*' element={<NotFound/>}/>
+
                 </Routes>
             </MainLayout>
         </ScrollToTop>
