@@ -1,9 +1,11 @@
 //styles
 import styles from './ProductCard.module.scss'
+import {Link} from "react-router-dom";
 
 const ProductCard = ({product, type = "slider"}) => {
     return (
-        <div className={type === "slider" ? styles.card : `${styles.card} ${styles.mobile}`}>
+        <Link to={`/products-details/${product?.id}`}
+              className={type === "slider" ? styles.card : `${styles.card} ${styles.mobile}`}>
             <div className={styles.imageProduct}>
                 {product.discount && type === "slider" &&
                     <div className={styles.discountBox}><p>{`${product.discount}%`}</p></div>}
@@ -25,7 +27,7 @@ const ProductCard = ({product, type = "slider"}) => {
                     <p className={styles.color}>رنگ : <span>سبز</span></p>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 export default ProductCard

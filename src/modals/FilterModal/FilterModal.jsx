@@ -33,7 +33,7 @@ const FilterModal = ({showModal, setShowModal}) => {
                     <Checkbox color="var(--purple)" classNames={{
                         root: 'rootCheckbox',
                         label: "labelCheckbox"
-                    }} labelPosition="right" label="نوع 1"/>
+                    }} labelPosition="right" label="نوعn 1"/>
                     <Checkbox color="var(--purple)" classNames={{
                         root: 'rootCheckbox',
                         label: "labelCheckbox"

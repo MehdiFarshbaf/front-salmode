@@ -9,13 +9,14 @@ const MainLayout = ({children}) => {
     const {pathname} = location
 
 
-
     return (
-        <main className={styles.main}>
+        <>
             <Header/>
-            {children}
-            {pathname !=='/login' && <Footer/>}
-        </main>
+            <main className={styles.main}>
+                {children}
+            </main>
+            {pathname !== '/login' && <Footer/>}
+        </>
     )
 }
 export default MainLayout

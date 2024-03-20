@@ -47,16 +47,14 @@ const Products = () => {
                             color="var(--purple)"
                             label="محصولات موجود"
                         />
-                        <div className={styles.tabs}>
-                            <Tabs variant="default" defaultValue="first" color="var(--purple)"
-                                  className={styles.tabs} classNames={{tabLabel: styles.tabLabel}}>
-                                <Tabs.List>
-                                    <Tabs.Tab value="first">جدیدترین</Tabs.Tab>
-                                    <Tabs.Tab value="second">محبوب ترین</Tabs.Tab>
-                                    <Tabs.Tab value="seco">پرفروش ترین</Tabs.Tab>
-                                </Tabs.List>
-                            </Tabs>
-                        </div>
+                        <Tabs variant="default" defaultValue="first" color="var(--purple)"
+                              classNames={{tabLabel: styles.tabLabel}}>
+                            <Tabs.List>
+                                <Tabs.Tab value="first">جدیدترین</Tabs.Tab>
+                                <Tabs.Tab value="second">محبوب ترین</Tabs.Tab>
+                                <Tabs.Tab value="seco">پرفروش ترین</Tabs.Tab>
+                            </Tabs.List>
+                        </Tabs>
                         <button onClick={() => setShowSort(true)}><p>مرتب سازی</p><img src={sortIcon} alt=""/></button>
                         <button onClick={() => setShowFilter(true)}><p>فیلتر</p><img src={filterIcon} alt=""/></button>
                     </div>

@@ -1,0 +1,123 @@
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 58px;
+  margin: 32px 0;
+}
+
+.banner {
+  width: 100%;
+  border-radius: 8px;
+  //background: var(--purple, radial-gradient(197.96% 200.01% at 45.56% 100%, #EDEDED 0%, #B08FAF 100%));
+  margin-bottom: 24px;
+  object-fit: cover;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.name {
+  text-align: right;
+  direction: rtl;
+  color: var(--purple);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.code {
+  color: var(--black);
+  text-align: right;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.price {
+  text-align: left;
+  color: var(--purple);
+  font-size: 28px;
+  font-style: normal;
+  direction: rtl;
+  font-weight: 500;
+}
+
+.textDescription {
+  text-align: right;
+  direction: rtl;
+  color: var(--gray1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.containerButtons {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+
+  button:nth-child(odd) {
+    width: 50px;
+  }
+
+  button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background: var(--salmode, linear-gradient(223deg, #BD992F -31.99%, #FACE4B 154.59%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--gray1);
+  }
+}
+
+.discount {
+  text-align: left;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: line-through;
+  margin-bottom: 8px;
+  color: var(--gray1);
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    display: block;
+  }
+}

@@ -39,17 +39,17 @@ export const categoryList = [
 ]
 
 export const productList = [
-    {id: 0, name: "مانتو زنانه", image: imgProduct, price: 1200000, discount: 15},
-    {id: 1, name: "مانتو زنانه", image: imgProduct, price: 1260000},
-    {id: 2, name: "مانتو زنانه", image: imgProduct, price: 1200000},
-    {id: 3, name: "مانتو زنانه", image: imgProduct, price: 1200000, discount: 20},
-    {id: 4, name: "مانتو زنانه", image: imgProduct, price: 1200000},
-    {id: 4, name: "مانتو زنانه", image: imgProduct, price: 850000, discount: 40},
-    {id: 4, name: "مانتو زنانه", image: imgProduct, price: 1200000, discount: 15},
-    {id: 4, name: "مانتو زنانه", image: imgProduct, price: 1400000, discount: 50},
-    {id: 4, name: "مانتو زنانه", image: imgProduct, price: 200000, discount: 70},
-    {id: 5, name: "مانتو زنانه", image: imgProduct, price: 1200000},
-    {id: 6, name: "مانتو زنانه", image: imgProduct, price: 778000},
+    {id: 0, name: "مانتو زنانه", rate: 1, image: imgProduct, price: 1200000, discount: 15},
+    {id: 1, name: "کیف دوشی", rate: 2, image: imgProduct, price: 1260000},
+    {id: 2, name: "شال", rate: 3, image: imgProduct, price: 1200000},
+    {id: 3, name: "پالتو", rate: 4, image: imgProduct, price: 1200000, discount: 20},
+    {id: 4, name: "کلاه", rate: 5, image: imgProduct, price: 1200000},
+    {id: 4, name: "مانتو زنانه", rate: 5, image: imgProduct, price: 850000, discount: 40},
+    {id: 4, name: "مانتو زنانه", rate: 5, image: imgProduct, price: 1200000, discount: 15},
+    {id: 4, name: "مانتو زنانه", rate: 5, image: imgProduct, price: 1400000, discount: 50},
+    {id: 4, name: "مانتو زنانه", rate: 5, image: imgProduct, price: 200000, discount: 70},
+    {id: 5, name: "مانتو زنانه", rate: 5, image: imgProduct, price: 1200000},
+    {id: 6, name: "مانتو زنانه", rate: 5, image: imgProduct, price: 778000},
 ]
 
 export const faqList = [

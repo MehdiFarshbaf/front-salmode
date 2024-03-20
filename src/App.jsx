@@ -10,6 +10,7 @@ import Rules from "./pages/Rules/Rules";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import NotFound from "./pages/NotFound/NotFound";
 import Products from "./pages/Products/Products";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
 
 const App = () => {
     return (
@@ -24,6 +25,7 @@ const App = () => {
                     <Route path='/login' element={<Login/>}/>
                     <Route path='/rule' element={<Rules/>}/>
                     <Route path='/products/:id' element={<Products/>}/>
+                    <Route path='/products-details/:id' element={<ProductDetails/>}/>
                     <Route path='*' element={<NotFound/>}/>
 
                 </Routes>

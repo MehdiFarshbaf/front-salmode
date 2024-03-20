@@ -32,9 +32,11 @@
     transform: scale(1.1);
   }
 }
+
 .discountBoxMobile {
- display: none;
+  display: none;
 }
+
 .discountBox {
   z-index: 2;
   width: 48px;
@@ -65,7 +67,7 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  max-height: 76px;
+  //max-height: 76px;
 }
 
 .prices {
@@ -78,6 +80,7 @@
   font-weight: 400;
   line-height: normal;
   direction: rtl;
+  text-wrap: nowrap;
 }
 
 .color {
